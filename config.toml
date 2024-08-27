@@ -1,0 +1,36 @@
+# 0:stable, 1:features
+mode = 1
+
+[deepl]
+api_key = ''
+add_translation_on_export = true
+
+[postgres]
+user = "postgres"
+pass = ""
+port = ""
+db_name = "miadb"
+db_name_features = "miadb_features"
+
+[jp_config]
+minimal_morphs = 13
+max_morphs = 19
+translation_lang = "PL"
+# 0 - none, 1 - priority, 2 - frequency
+sentence_rating_mode = 2
+used_priority_list = "random_words"
+used_frequency_list = 7
+note_type_max_bonus = 3
+cards_context_depth = 1
+
+[paths]
+media_storage_folder = ''
+apkg_recznie = ''
+logs_folder = ''
+main_dir = ''
+
+[logging]
+format_console = '<level>{level}</level> | <green>{time:DD.MM.YYYY HH:mm:ss}</green> | <cyan>{file}:{function}</cyan> - <magenta>{message}</magenta>'
+format_file = '<level>{level}</level> | <green>{time:DD.MM.YYYY HH:mm:ss}</green> | <cyan>{function}</cyan> - <magenta>{message}</magenta>'
+level_console = "TRACE"
+level_file = "TRACE"

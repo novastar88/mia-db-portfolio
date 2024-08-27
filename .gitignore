@@ -1,0 +1,10 @@
+__pycache__
+backup
+*.log
+temp_*
+temp*
+temp
+export
+backend/actions_shortcuts.py
+
+test_resources
